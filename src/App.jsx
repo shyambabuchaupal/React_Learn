@@ -5,7 +5,11 @@ import { useState } from "react";
 import AllCards from "./component/AllCards";
 import {data} from './utilis/data';
 import './index.css'
-import Form from "./component/Form";
+import Header from "./component/Header";
+import { Route, Routes } from "react-router-dom";
+// import Form from "./component/Form";
+// import Uncontrolled from "./component/Uncontrolled";
+// import AnotherLogicFormSubmit from "./component/AnotherLogicFormSubmit";
 
 
 // import Virtual from "./virtual";
@@ -34,7 +38,14 @@ const App = () => {
       <AllCards data={filterData}/>
     </div> */}
 
-    <Form/>
+    {/* <Form/> */}
+    {/* <Uncontrolled/> */}
+    {/* <AnotherLogicFormSubmit/> */}
+    <Routes>
+      <Route path="/" element={<Header/>}/>
+    </Routes>
+
+  
    
     </>
   );

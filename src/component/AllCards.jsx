@@ -9,7 +9,7 @@ function AllCards({data}) {
           return (
             <div key={singledata.id} className="w-[20%] ">
               <div className="bg-red-300 shadow-lg h-[70vh] rounded">
-                <img src={singledata.thumbnailImage} alt="img"  className="w-[100%] aspect-square object-cover"/>
+                <img src={singledata.images} alt="img"  className="w-[100%] aspect-square object-cover"/>
                <div className="p-3">
                <h2 className="text-lg font-semibold">{singledata.name}</h2>
                 <p className="text-xs">{singledata.basePrice}</p>
